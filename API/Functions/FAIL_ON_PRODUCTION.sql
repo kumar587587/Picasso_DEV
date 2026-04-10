@@ -1,5 +1,6 @@
 --------------------------------------------------------
---  DDL for Function FAIL_ON_PRODUCTION
+--  DDL for Function FAIL_ON_PRODUCTION 
+-- Git Testing 
 --------------------------------------------------------
 
   CREATE OR REPLACE EDITIONABLE FUNCTION "WKSP_XXAPI"."FAIL_ON_PRODUCTION" RETURN BOOLEAN
