@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  DDL for Trigger XXCPC_XXX_BRI
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "WKSP_XXCPC"."XXCPC_XXX_BRI" 
+BEFORE INSERT ON XXCPC_CONTENTPARTNERBILLINGINF_A 
+REFERENCING OLD AS OLD NEW AS NEW 
+for each row
+BEGIN
+  :NEW.EXE_ORDER := XXCPC_EXE_ORDER_SEQ.NEXTVAL;
+END;
+/
+ALTER TRIGGER "WKSP_XXCPC"."XXCPC_XXX_BRI" ENABLE;
