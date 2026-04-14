@@ -1,0 +1,24 @@
+--------------------------------------------------------
+--  File created - Monday-April-13-2026   
+--------------------------------------------------------
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_EXPORT_FILES_API.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_EXPORT_HOD.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_GENERAL_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_GEN_DEBUG_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_GEN_REST_APIS.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_GEN_REST_APIS_PM2VARICENT.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_IMPORT_SALESFORCE.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_OBJECT_STORAGE_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_ORDS_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_101_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_102_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_103_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_104_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_105_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_106_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_700_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_PAGE_SFD.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_POST_CLONE_ACTIONS.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_SYNCHRONIZE_API.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_USERS_PKG.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\Packages\XXPM_VCODES_PKG.sql

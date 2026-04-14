@@ -1,0 +1,27 @@
+--------------------------------------------------------
+--  DDL for Procedure XXPM_USER_LOGIN_DATE_TIME
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "WKSP_XXPM"."XXPM_USER_LOGIN_DATE_TIME" AS
+P_USER_ID           VARCHAR2(200) := V('APP_USER');
+P_USER_LOGIN_TIME   TIMESTAMP;-- := CURRENT_TIMESTAMP;--SYSTIMESTAMP;
+A                   NUMBER:=0;
+E_ERROR             VARCHAR2(2000);
+BEGIN
+    SELECT SYSTIMESTAMP AT TIME ZONE 'Europe/Amsterdam' INTO P_USER_LOGIN_TIME FROM DUAL;
+    SELECT COUNT(*) INTO A FROM xxpm_user_login_time WHERE USER_ID = P_USER_ID;
+    IF A > 0 THEN
+        UPDATE xxpm_user_login_time SET LAST_LOGIN_DATE_TIME = P_USER_LOGIN_TIME WHERE USER_ID = P_USER_ID;
+    ELSE
+        INSERT INTO xxpm_user_login_time (USER_ID,LAST_LOGIN_DATE_TIME)
+        SELECT P_USER_ID,NVL(P_USER_LOGIN_TIME,SYSTIMESTAMP) FROM DUAL;
+    END IF;
+EXCEPTION
+    WHEN OTHERS THEN
+        E_ERROR := SQLERRM;
+        XXPM_GEN_DEBUG_PKG.DEBUG('XXPM_USER_LOGIN_DATE_TIME',E_ERROR);
+        NULL;
+END XXPM_USER_LOGIN_DATE_TIME;
+
+/
