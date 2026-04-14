@@ -1,0 +1,79 @@
+--------------------------------------------------------
+--  DDL for View XXCPC_USED_DATES_V
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "WKSP_XXCPC"."XXCPC_USED_DATES_V" ("USED_DATE") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+  SELECT DISTINCT start_run FROM xxcpc_api_statistics UNION 
+SELECT DISTINCT end_run FROM xxcpc_api_statistics UNION 
+SELECT DISTINCT start_first_call FROM xxcpc_api_statistics_details UNION 
+SELECT DISTINCT end_last_call FROM xxcpc_api_statistics_details UNION 
+SELECT DISTINCT startdate FROM xxcpc_contractpackagechannels UNION 
+SELECT DISTINCT enddate FROM xxcpc_contractpackagechannels UNION 
+SELECT DISTINCT startdate FROM xxcpc_providers UNION 
+SELECT DISTINCT enddate FROM xxcpc_providers UNION 
+SELECT DISTINCT last_synchronization_date FROM xxcpc_tables UNION 
+SELECT DISTINCT periodcounted FROM xxcpc_subscriber UNION 
+SELECT DISTINCT importdate FROM xxcpc_subscriber UNION 
+SELECT DISTINCT startdate FROM xxcpc_contentpartners UNION 
+SELECT DISTINCT enddate FROM xxcpc_contentpartners UNION 
+SELECT DISTINCT startdate FROM xxcpc_contracts UNION 
+SELECT DISTINCT enddate FROM xxcpc_contracts UNION 
+SELECT DISTINCT endreminderby FROM xxcpc_contracts UNION 
+SELECT DISTINCT inflationreminderby FROM xxcpc_contracts UNION 
+SELECT DISTINCT invoicedate FROM xxcpc_manualpartnerinvoice UNION 
+SELECT DISTINCT duedate FROM xxcpc_manualpartnerinvoice UNION 
+SELECT DISTINCT billinginvoicedate FROM xxcpc_manualpartnerinvoice UNION 
+SELECT DISTINCT extracttobillingdate FROM xxcpc_manualpartnerinvoice UNION 
+SELECT DISTINCT invoicedate FROM xxcpc_correctionamounts UNION 
+SELECT DISTINCT startdate FROM xxcpc_packages UNION 
+SELECT DISTINCT enddate FROM xxcpc_packages UNION 
+SELECT DISTINCT startdate FROM xxcpc_contractpackagedetails UNION 
+SELECT DISTINCT enddate FROM xxcpc_contractpackagedetails UNION 
+SELECT DISTINCT startdate FROM xxcpc_tierperiods UNION 
+SELECT DISTINCT enddate FROM xxcpc_tierperiods UNION 
+SELECT DISTINCT startdate FROM xxcpc_specialpackages UNION 
+SELECT DISTINCT enddate FROM xxcpc_specialpackages UNION 
+SELECT DISTINCT startdate FROM xxcpc_specialpackagesdetails UNION 
+SELECT DISTINCT enddate FROM xxcpc_specialpackagesdetails UNION 
+SELECT DISTINCT startdate FROM xxcpc_channels UNION 
+--SELECT DISTINCT enddate FROM xxcpc_channels UNION 
+SELECT DISTINCT startdate FROM xxspm_packages_v UNION 
+SELECT DISTINCT startdate FROM xxspm_tieredcommissionrates_v UNION 
+SELECT DISTINCT enddate FROM xxspm_tieredcommissionrates_v UNION 
+SELECT DISTINCT startdate FROM xxspm_channels_v UNION 
+SELECT DISTINCT startdate FROM xxspm_sp_contracts_v UNION 
+SELECT DISTINCT enddate FROM xxspm_packages_v UNION 
+--SELECT DISTINCT enddate FROM xxcpc_channels_v UNION 
+SELECT DISTINCT billinginvoicedate FROM xxspm_manualpartnerinvoice_v UNION 
+SELECT DISTINCT invoicedate FROM xxspm_manualpartnerinvoice_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_channels_v UNION 
+SELECT DISTINCT startperiod FROM xxhsh_contractpackagedetails_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_sp_contracts_v UNION 
+SELECT DISTINCT enddate FROM xxspm_specialpackagesdetails_v UNION 
+SELECT DISTINCT extracttobillingdate FROM xxspm_manualpartnerinvoice_v UNION 
+SELECT DISTINCT enddate FROM xxspm_sp_contracts_v UNION 
+SELECT DISTINCT startdate FROM xxspm_contractpackagechannels_v UNION 
+SELECT DISTINCT periodcounted FROM xxhsh_subscriber_v UNION 
+SELECT DISTINCT enddate FROM xxspm_providers_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_providers_v UNION 
+SELECT DISTINCT importdate FROM xxspm_correctionamounts_v UNION 
+SELECT DISTINCT startdate FROM xxspm_specialpackagesdetails_v UNION 
+SELECT DISTINCT enddate FROM xxspm_channels_v UNION 
+SELECT DISTINCT startdate FROM xxspm_contentpartners_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_contractpackagechannels_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_tieredcommissionrates_v UNION 
+SELECT DISTINCT inflationreminderby FROM xxspm_sp_contracts_v UNION 
+SELECT DISTINCT enddate FROM xxspm_contractpackagechannels_v UNION 
+SELECT DISTINCT startdate FROM xxspm_providers_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_contentpartners_v UNION 
+SELECT DISTINCT duedate FROM xxspm_manualpartnerinvoice_v UNION 
+SELECT DISTINCT endreminderby FROM xxspm_sp_contracts_v UNION 
+SELECT DISTINCT invoiceperiod FROM xxspm_correctionamounts_v UNION 
+SELECT DISTINCT endperiod FROM xxspm_contractpackagedetails_v UNION 
+--SELECT DISTINCT startdate FROM xxcpc_channels_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_packages_v UNION 
+SELECT DISTINCT startdate FROM xxhsh_specialpackagesdetails_v UNION 
+SELECT DISTINCT periodcounted FROM xxspm_subscriber_v UNION 
+SELECT DISTINCT enddate FROM xxspm_contentpartners_v UNION 
+SELECT DISTINCT startperiod FROM xxspm_contractpackagedetails_v
+;
