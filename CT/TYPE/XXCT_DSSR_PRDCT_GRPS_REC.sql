@@ -1,0 +1,21 @@
+--------------------------------------------------------
+--  DDL for Type XXCT_DSSR_PRDCT_GRPS_REC
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "WKSP_XXCT"."XXCT_DSSR_PRDCT_GRPS_REC" IS OBJECT
+(
+   DOSSIER_PRODUCT_GROUP_ID NUMBER,
+   DOSSIER_ID NUMBER,
+   PRODUCT_GROUP_CODE VARCHAR2 (20),
+   TARGET NUMBER,
+   CONTRIBUTION NUMBER,
+   AMOUNT NUMBER,
+   REMARKS VARCHAR2 (4000),
+   MANDATE_CYCLE NUMBER,
+   CREATION_DATE DATE
+)
+
+
+
+
+/
