@@ -1,0 +1,5 @@
+--------------------------------------------------------
+--  DDL for Sequence XXCPC_MANPARTNER_INV_SPLIT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "WKSP_XXCPC"."XXCPC_MANPARTNER_INV_SPLIT_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 2181 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
