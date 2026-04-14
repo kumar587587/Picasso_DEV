@@ -1,0 +1,5 @@
+--------------------------------------------------------
+--  DDL for Sequence XXCPC_CONTRACTS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "WKSP_XXCPC"."XXCPC_CONTRACTS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 6180 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
