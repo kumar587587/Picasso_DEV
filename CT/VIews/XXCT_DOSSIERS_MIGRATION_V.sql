@@ -1,0 +1,38 @@
+--------------------------------------------------------
+--  DDL for View XXCT_DOSSIERS_MIGRATION_V
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "WKSP_XXCT"."XXCT_DOSSIERS_MIGRATION_V" ("DOSSIER_ID", "DOSSIER_TYPE", "DOSSIER_CATEGORY_ID", "PARTNER_ID", "STATUS", "ACTION_START_DATE", "ACTION_END_DATE", "LETTER_NUMBER_YEAR", "LETTER_NUMBER_SEQUENCE", "LETTER_NUMBER_PERIOD", "LETTER_SUFFIX", "PAYMENT_TYPE", "REMARKS", "ADDITION_REMARKS", "SUBDEALER_RESOURCE_ID", "CHILD_GROUP_ID", "OBJECT_VERSION_NUMBER", "CREATION_DATE", "STATUS_DATE", "FINANCIAL_CLOSE", "INVOICE_NUMBER", "PARENT_DOSSIER_ID", "LAST_UPDATE_DATE", "MANDATE_CYCLE", "REQUEST_ID", "INVOICE_REMARK", "EXTRACT_TO_AR", "EXTRACT_PAYRUN_ID", "HOLD_PAYMENT") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+  SELECT d.DOSSIER_ID,
+          d.DOSSIER_TYPE,
+          d.DOSSIER_CATEGORY_ID,
+          d.partner_id,
+          d.STATUS,
+          d.ACTION_START_DATE,
+          d.ACTION_END_DATE,
+          d.LETTER_NUMBER_YEAR,
+          d.LETTER_NUMBER_SEQUENCE,
+          d.LETTER_NUMBER_PERIOD,
+          d.LETTER_SUFFIX,
+          d.PAYMENT_TYPE,
+          replace(d.REMARKS, chr(13)||chr(10),'[HRDRET]') REMARKS,
+          d.ADDITION_REMARKS,
+          d.SUBDEALER_RESOURCE_ID,
+          d.CHILD_GROUP_ID,
+          d.OBJECT_VERSION_NUMBER,
+          d.CREATION_DATE,
+          d.STATUS_DATE,
+          d.FINANCIAL_CLOSE,
+          d.INVOICE_NUMBER,
+          d.PARENT_DOSSIER_ID,
+          d.LAST_UPDATE_DATE,
+          d.MANDATE_CYCLE,
+          d.REQUEST_ID,
+          d.INVOICE_REMARK,
+          d.EXTRACT_TO_AR,
+          d.EXTRACT_PAYRUN_ID,
+          d.HOLD_PAYMENT
+     --select count(*)
+     FROM xxct_dossiers d    
+     order by dossier_id
+;
