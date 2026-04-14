@@ -1,0 +1,25 @@
+--------------------------------------------------------
+--  File created - Monday-April-13-2026   
+--------------------------------------------------------
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_ADDRESSES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_ADDRESS_TYPES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_ALL_ASSIGNMENTS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_ALL_JOBS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_ALL_PEOPLE_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_AUDIT_DATA_S.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_BATCH_RUN_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_CHAINS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_CONTACTS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_DEBUG_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_DOCUMENTATION_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_EXTERNAL_PARTNERS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_FILES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_LOOKUPS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_LOOKUP_VALUES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_PARTNERS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_RESPONSIBILITIES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_SEQ_BRL.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_SETTINGS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_USERS_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_USER_RESPONSIBILITIES_SEQ.sql
+@C:\Users\AK001087332\Desktop\Picasso-Main\PM\SEQUENCE\XXPM_VCODES_SEQ.sql
